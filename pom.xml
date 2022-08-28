@@ -3,7 +3,10 @@
 	<groupId>anu.learning.test</groupId>
 	<artifactId>anu.learning.test</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-
+	<properties>
+	   <maven.compiler.source>11.0</maven.compiler.source>
+	   <maven.compiler.target>11.0</maven.compiler.target>
+	 </properties>
 	<dependencies>
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
