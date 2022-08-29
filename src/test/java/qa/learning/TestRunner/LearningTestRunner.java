@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(
 		features = "src/test/java/qa/learning/FeatureFiles/",
 		tags="@TS01",
-		plugin= {"html:target/cucumber-html-report", "json:target/cucumber-json-report.json"} ,
+		plugin= {"pretty", "html:target/cucumber-html-report.html", "json:target/cucumber-json-report.json"} ,
 		monochrome= true,
 		glue = "qa.learning.StepDefination")
 
