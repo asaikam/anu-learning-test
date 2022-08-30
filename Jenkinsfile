@@ -8,4 +8,7 @@ node {
     stage('Learning Test'){
         bat 'mvn test -Dcucumber.options="--tags @"smoke""'
     }
+    stage('Cucumber Report'){
+    cucumber buildStatus: 'null', customCssFiles: '', customJsFiles: '', failedFeaturesNumber: -1, failedScenariosNumber: -1, failedStepsNumber: -1, fileIncludePattern: '**/*.json', jsonReportDirectory: 'target', pendingStepsNumber: -1, reportTitle: 'Learning_CucumberReport', skippedStepsNumber: -1, sortingMethod: 'ALPHABETICAL', undefinedStepsNumber: -1
+    }
 }
