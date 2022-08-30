@@ -6,6 +6,6 @@ node {
         bat 'mvn clean'
     }
     stage('Learning Test'){
-        bat'mvn test -Dcucumber.options="--tags @"smoke""'
+        bat 'mvn test -Dcucumber.options="--tags @"smoke""'
     }
 }
