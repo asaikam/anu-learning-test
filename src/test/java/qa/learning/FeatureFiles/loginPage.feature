@@ -1,4 +1,5 @@
 @TS01
+@Smoke
 Feature: Login Functtionality Validation
   
   Scenario: SwagLabs_Login Functionality

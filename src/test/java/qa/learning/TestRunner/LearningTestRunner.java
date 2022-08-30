@@ -10,7 +10,7 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features = "src/test/java/qa/learning/FeatureFiles/",
-		tags="@TS01",
+		tags="",
 		plugin= {"pretty", "html:target/cucumber-html-report.html", "json:target/cucumber-json-report.json"} ,
 		monochrome= true,
 		glue = "qa.learning.StepDefination")
