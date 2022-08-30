@@ -21,11 +21,8 @@ public class LoginPage_StepDefination extends BaseClass {
 
 	@When("^enter user credentials$")
 	public void enter_user_credentials() {
-		/*String pUserName = PropertyFileReader.fn_ReadPropertyFile().getProperty("username");
-		String pPassword = PropertyFileReader.fn_ReadPropertyFile().getProperty("password");*/
-		String pUserName = System.getenv("username");
-		String pPassword = System.getenv("password");
-
+		String pUserName = PropertyFileReader.fn_ReadPropertyFile().getProperty("username");
+		String pPassword = PropertyFileReader.fn_ReadPropertyFile().getProperty("password");
 		LoginPage_PO lp = new LoginPage_PO(driver);
 		lp.login(pUserName, pPassword);
 
