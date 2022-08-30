@@ -5,4 +5,7 @@ node {
 	stage ('Build'){
         echo "Success"
     }
+    stage('Learning Test'){
+    sh 'test -Dcucumber.options="--tags @"$Tags""'
+    }
 }
