@@ -13,7 +13,7 @@ import io.cucumber.junit.CucumberOptions;
 		tags="",
 		plugin= {"pretty", "html:target/cucumber-html-report.html", "json:target/cucumber-json-report.json"} ,
 		monochrome= true,
-		glue = "qa.learning.StepDefination")
+		glue = {"qa.learning.StepDefination", "qa.learning.DataManagement"})
 
 public class LearningTestRunner
 {
